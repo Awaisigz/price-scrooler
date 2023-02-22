@@ -6,39 +6,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
+      .abc{
+        overflow: hidden;
+
+      }
       .container {
+            font-family: "Segoe UI";
+
         float: right;
         padding: 15px 5px;
-        overflow: hidden;
         font-size: 20px;
         position: relative;
         width: 300px;
         background-color: #006aff;
-      }
-      #message {
         position: relative;
-        color: white;
-        font-weight: bold;
-        right: -110%;
+
+        /* right: %; */
         animation: linear infinite;
         animation-name: run;
-        animation-duration: 5s;
-        animation-delay: 1s;
+        animation-duration: 2.5s;
+        /* animation-delay: 0s; */
         animation-iteration-count: 1;
         animation-fill-mode: forwards;
       }
+      #message {
+        color: white;
+        font-weight: bold;
+      }
       @keyframes run {
         0% {
-          right: -100%;
+          right: -40%;
         }
         25% {
-          right: -75%;
+          right: -30%;
         }
         50% {
-          right: -50%;
+          right: -20%;
         }
         75% {
-          right: -25%;
+          right: -10%;
         }
         100% {
           right: 0%;
@@ -47,8 +53,10 @@
     </style>
   </head>
   <body>
-    <div class="container">
-      <span id="message">Only $19.99 monthly </span>
+    <div class="abc">
+      <div class="container">
+        <span id="message">Only $19.99 monthly </span>
+      </div>
     </div>
   </body>
 </html>
